@@ -21,7 +21,7 @@ const NavBar = () => {
         </a>
 
         {/* Menu */}
-        <ul className="hidden gap-3 md:flex">
+        <ul className="hidden gap-5 md:flex">
           <li>
             <a href="#">Home</a>
           </li>
