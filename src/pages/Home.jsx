@@ -23,7 +23,7 @@ const Home = () => {
         />
         <div className="absolute w-full h-full left-0 right-0 bottom-0 bg-gradient-to-l from-gradient1 to-gradient2"></div>
 
-        <div className="container mx-auto z-10 mt-32 flex items-center justify-between flex-col md:flex-row md:gap-5">
+        <div className="container px-5 mx-auto z-10 mt-32 flex items-center justify-between flex-col md:flex-row md:gap-5">
           <div className="left-side">
             <h1 className="text-4xl font-poppins text-white font-medium max-w-2xl leading-none md:text-7xl md:font-bold">
               International Currency Transfer Provider
@@ -132,7 +132,7 @@ const Home = () => {
 
       {/* Popular Countries */}
       <div className="countries py-10">
-        <div className="container mx-auto">
+        <div className="container mx-auto px-5">
           <h1 className="text-center text-4xl font-medium py-5 mb-5">
             Popular Countries Our Customers Send Money
           </h1>
@@ -149,7 +149,7 @@ const Home = () => {
 
       {/* How it works */}
       <div className="how-it-works py-10">
-        <div className="container mx-auto">
+        <div className="container mx-auto px-5">
           <h1 className="text-center text-4xl font-medium py-5 mb-5">
             How Does Money Transfer Works?
           </h1>
