@@ -10,7 +10,9 @@ const How = ({ id, title, img, message }) => {
         </div>
         <img src={img} alt="" />
       </div>
-      <p className="text-center max-w-sm md:max-w-md">{message}</p>
+      <p className="text-center text-gray-600 max-w-sm md:max-w-md">
+        {message}
+      </p>
     </div>
   );
 };
