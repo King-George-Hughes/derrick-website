@@ -11,7 +11,7 @@ const NavBar = () => {
   console.log(toggle);
 
   return (
-    <nav className="py-6 bg-gradient-to-r from-gradient1 to-gradient2 fixed z-10 backdrop-blur-sm w-full text-white">
+    <nav className="py-6 bg-gradient-to-r from-gradient1 to-gradient2 fixed z-20 backdrop-blur-md w-full text-white">
       <div className="container mx-auto flex items-center justify-between px-2">
         <a
           href="#"

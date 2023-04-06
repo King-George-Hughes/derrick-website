@@ -1,15 +1,16 @@
 import React, { useState } from "react";
-import { NavBar, Country } from "../components";
+import { NavBar, Country, How } from "../components";
 import { bg } from "../assets";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
-import data from "../data/data";
+import { allCountries, howItWorks } from "../data/data";
 
 const Home = () => {
-  const [countries, setCountries] = useState(data);
+  const [countries, setCountries] = useState(allCountries);
+  const [howTo, setHowTo] = useState(howItWorks);
 
   return (
-    <div>
+    <div className="bg-bgColor">
       {/* NavBar */}
       <NavBar />
 
@@ -141,6 +142,31 @@ const Home = () => {
               const { id, img, name } = country;
 
               return <Country key={id} img={img} name={name} />;
+            })}
+          </div>
+        </div>
+      </div>
+
+      {/* How it works */}
+      <div className="how-it-works py-10">
+        <div className="container mx-auto">
+          <h1 className="text-center text-4xl font-medium py-5 mb-5">
+            How Does Money Transfer Works?
+          </h1>
+
+          <div className="flex flex-col gap-5 md:flex-row">
+            {howItWorks.map((how) => {
+              const { id, title, img, message } = how;
+
+              return (
+                <How
+                  key={id}
+                  id={id}
+                  title={title}
+                  img={img}
+                  message={message}
+                />
+              );
             })}
           </div>
         </div>

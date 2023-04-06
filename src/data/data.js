@@ -1,4 +1,4 @@
-const countries = [
+export const allCountries = [
   {
     id: 1,
     img: "../src/assets/countries/img1.png",
@@ -61,4 +61,28 @@ const countries = [
   },
 ];
 
-export default countries;
+export const howItWorks = [
+  {
+    id: 1,
+    title: "Create a free account",
+    img: "../src/assets/customer.png",
+    message:
+      "Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. vivamus suscipit tortor eget felis porttitor volutpat. Sed porttitor lectus nibh.",
+  },
+  {
+    id: 2,
+    title: "Send your funds",
+    img: "../src/assets/profits.png",
+    message:
+      "Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. vivamus suscipit tortor eget felis porttitor volutpat. Sed porttitor lectus nibh.",
+  },
+  {
+    id: 3,
+    title: "Track your transfer",
+    img: "../src/assets/data.png",
+    message:
+      "Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. vivamus suscipit tortor eget felis porttitor volutpat. Sed porttitor lectus nibh.",
+  },
+];
+
+// export default countries;
