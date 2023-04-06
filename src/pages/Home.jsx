@@ -85,7 +85,7 @@ const Home = () => {
               <p className="text-xl">Exchange Rate</p>
               <h2 className="text-2xl">1 GBP = 1.29356 USD</h2>
             </div>
-            <div className="bg-white p-5">
+            <div className="bg-white p-5 rounded-b-lg">
               <select
                 name="bank"
                 id="bank"
