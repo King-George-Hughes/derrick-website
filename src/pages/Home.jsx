@@ -155,7 +155,7 @@ const Home = () => {
           </h1>
 
           <div className="flex flex-col gap-5 md:flex-row">
-            {howItWorks.map((how) => {
+            {howTo.map((how) => {
               const { id, title, img, message } = how;
 
               return (
