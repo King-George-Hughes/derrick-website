@@ -3,6 +3,7 @@ import { NavBar, Country, How, Why, Service } from "../components";
 import { bg } from "../assets";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import {
   allCountries,
   howItWorks,
@@ -236,6 +237,70 @@ const Home = () => {
             </div>
             <div className="transition duration-500 ease-in bg-gradient-to-r from-primaryColor2 to-secondaryColo2 text-center p-8 w-full hover:from-primaryColor hover:to-secondaryColor md:w-1/4">
               <span className="text-white text-xl">Accessibility</span>
+            </div>
+          </div>
+
+          <div className="bg-white p-5 flex flex-col items-center justify-between gap-10 md:p-10 md:flex-row">
+            <img
+              src="./card.jpg"
+              alt=""
+              className="w-full max-h-[500px] object-cover md:w-1/3 rounded-xl"
+            />
+            <div className="md:w-2/3">
+              <p className="text-lg text-gray-600 my-5 max-w-3xl">
+                Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+                vestibulum ac diam sit amet quam vehicula elementum sed sit amet
+                dui. pretium ut lacinia in, elementum id enim.
+              </p>
+              <p className="text-lg text-gray-600 my-5 max-w-3xl">
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+                posuere cubilia curae donec velit neque, auctor sit amet aliquam
+                vel, ullamcorper sit amet ligula. pellentesque in ipsum id orci
+                porta dapibus. curabitur non nulla sit amet nisl tempus
+                convallis quis ac lectus. quisque velit nisi elementum id enim
+              </p>
+              <p className="my-5">
+                <FontAwesomeIcon
+                  icon={faCheck}
+                  size="xl"
+                  className="text-primaryColor2 mr-5"
+                />
+                <span className="text-lg text-gray-600">
+                  Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+                </span>
+              </p>
+              <p className="my-5">
+                <FontAwesomeIcon
+                  icon={faCheck}
+                  size="xl"
+                  className="text-primaryColor2 mr-5"
+                />
+                <span className="text-lg text-gray-600">
+                  Vestibulum ac diam sit amet quam vehicula elementum sed sit
+                  amet.
+                </span>
+              </p>
+              <p className="my-5">
+                <FontAwesomeIcon
+                  icon={faCheck}
+                  size="xl"
+                  className="text-primaryColor2 mr-5"
+                />
+                <span className="text-lg text-gray-600">
+                  Donec rutrum congue leo eget malesuada.
+                </span>
+              </p>
+              <p className="my-5">
+                <FontAwesomeIcon
+                  icon={faCheck}
+                  size="xl"
+                  className="text-primaryColor2 mr-5"
+                />
+                <span className="text-lg text-gray-600">
+                  Curabitur non nulla sit amet nisl tempus convallis quis ac
+                  lectus.
+                </span>
+              </p>
             </div>
           </div>
         </div>
