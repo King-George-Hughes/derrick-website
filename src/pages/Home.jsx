@@ -1,13 +1,14 @@
 import React, { useState } from "react";
-import { NavBar, Country, How } from "../components";
+import { NavBar, Country, How, Why } from "../components";
 import { bg } from "../assets";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
-import { allCountries, howItWorks } from "../data/data";
+import { allCountries, howItWorks, whyChoose } from "../data/data";
 
 const Home = () => {
   const [countries, setCountries] = useState(allCountries);
   const [howTo, setHowTo] = useState(howItWorks);
+  const [whyYou, setWhyYou] = useState(whyChoose);
 
   return (
     <div className="bg-bgColor">
@@ -15,7 +16,7 @@ const Home = () => {
       <NavBar />
 
       {/* Hero */}
-      <div className="relative w-full h-full flex md:h-screen pb-5">
+      <div className="relative w-full h-full flex md:h-screen pb-10">
         <img
           src={bg}
           alt=""
@@ -23,7 +24,7 @@ const Home = () => {
         />
         <div className="absolute w-full h-full left-0 right-0 bottom-0 bg-gradient-to-l from-gradient1 to-gradient2"></div>
 
-        <div className="container px-5 mx-auto z-10 mt-32 flex items-center justify-between flex-col md:flex-row md:gap-5">
+        <div className="container px-3 mx-auto z-10 mt-32 flex items-center justify-between flex-col md:flex-row md:gap-5">
           <div className="left-side">
             <h1 className="text-4xl font-poppins text-white font-medium max-w-2xl leading-none md:text-7xl md:font-bold">
               International Currency Transfer Provider
@@ -86,13 +87,15 @@ const Home = () => {
               <p className="text-xl">Exchange Rate</p>
               <h2 className="text-2xl">1 GBP = 1.29356 USD</h2>
             </div>
-            <div className="bg-white p-5 rounded-b-lg">
+            <div className="bg-white p-5 rounded-b-xl">
               <select
                 name="bank"
                 id="bank"
                 className="w-full p-5 my-5 border-2 border-gray-200 rounded-md"
               >
-                <option value="bank_transfer">Bank Transfer</option>
+                <option value="bank_transfer" className="p-5">
+                  Bank Transfer
+                </option>
                 <option value="bank_transfer">Send Money</option>
                 <option value="bank_transfer">Interest Money</option>
                 <option value="bank_transfer">Invest Money</option>
@@ -148,7 +151,7 @@ const Home = () => {
       </div>
 
       {/* How it works */}
-      <div className="how-it-works py-10">
+      <div className="how-it-works py-10 mb-10">
         <div className="container mx-auto px-5">
           <h1 className="text-center text-4xl font-medium py-5 mb-5">
             How Does Money Transfer Works?
@@ -167,6 +170,23 @@ const Home = () => {
                   message={message}
                 />
               );
+            })}
+          </div>
+        </div>
+      </div>
+
+      {/* Why Choose */}
+      <div className="why-choose relative w-full bg-hero-bg bg-no-repeat bg-cover bg-center bg-fixed flex h-screen py-10">
+        <div className="container bg-bgColor w-full mt-auto mx-auto flex flex-col items-center justify-center p-5 md:w-1/2 md:ml-auto md:mt-0 md:mx-0">
+          <h1 className="text-center text-4xl font-medium py-5 mb-5">
+            Why Choose Us
+          </h1>
+
+          <div className="flex flex-col md:gap-10">
+            {whyYou.map((data) => {
+              const { id, title, message } = data;
+
+              return <Why key={id} title={title} message={message} />;
             })}
           </div>
         </div>

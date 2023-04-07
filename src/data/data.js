@@ -85,4 +85,31 @@ export const howItWorks = [
   },
 ];
 
+export const whyChoose = [
+  {
+    id: 1,
+    title: "Bank beating rates",
+    message:
+      "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. donec rutrum congue leo eget malesuada.",
+  },
+  {
+    id: 2,
+    title: "Bank beating rates",
+    message:
+      "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. donec rutrum congue leo eget malesuada.",
+  },
+  {
+    id: 3,
+    title: "We're Fast",
+    message:
+      "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. donec rutrum congue leo eget malesuada.",
+  },
+  {
+    id: 4,
+    title: "Easy to use",
+    message:
+      "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. donec rutrum congue leo eget malesuada.",
+  },
+];
+
 // export default countries;
