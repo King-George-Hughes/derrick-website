@@ -176,7 +176,7 @@ const Home = () => {
       </div>
 
       {/* Why Choose */}
-      <div className="why-choose relative w-full bg-hero-bg bg-no-repeat bg-cover bg-center bg-fixed flex h-screen py-10">
+      <div className="why-choose relative w-full bg-hero-bg bg-no-repeat bg-cover bg-center bg-fixed flex h-screen">
         <div className="container bg-bgColor w-full mt-auto mx-auto flex flex-col items-center justify-center p-5 md:w-1/2 md:ml-auto md:mt-0 md:mx-0">
           <h1 className="text-center text-4xl font-medium py-5 mb-5">
             Why Choose Us
