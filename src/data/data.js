@@ -112,4 +112,35 @@ export const whyChoose = [
   },
 ];
 
+export const transferServices = [
+  {
+    id: 1,
+    img: "../mobile-payment.svg",
+    title: "Regular Payment",
+    message:
+      "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar. quisque velit nisi, pretium ut lacinia in, elementum id enim. proin eget tortor risus. proin eget tortor risus.",
+  },
+  {
+    id: 2,
+    img: "../warning.svg",
+    title: "Rate Alerts",
+    message:
+      "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar. quisque velit nisi, pretium ut lacinia in, elementum id enim. proin eget tortor risus. proin eget tortor risus.",
+  },
+  {
+    id: 3,
+    img: "../fluctuation.svg",
+    title: "Market Analysis",
+    message:
+      "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar. quisque velit nisi, pretium ut lacinia in, elementum id enim. proin eget tortor risus. proin eget tortor risus.",
+  },
+  {
+    id: 4,
+    img: "../contract.svg",
+    title: "Spot Contracts",
+    message:
+      "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar. quisque velit nisi, pretium ut lacinia in, elementum id enim. proin eget tortor risus. proin eget tortor risus.",
+  },
+];
+
 // export default countries;

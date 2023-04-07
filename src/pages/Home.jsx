@@ -1,14 +1,20 @@
 import React, { useState } from "react";
-import { NavBar, Country, How, Why } from "../components";
+import { NavBar, Country, How, Why, Service } from "../components";
 import { bg } from "../assets";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
-import { allCountries, howItWorks, whyChoose } from "../data/data";
+import {
+  allCountries,
+  howItWorks,
+  whyChoose,
+  transferServices,
+} from "../data/data";
 
 const Home = () => {
   const [countries, setCountries] = useState(allCountries);
   const [howTo, setHowTo] = useState(howItWorks);
   const [whyYou, setWhyYou] = useState(whyChoose);
+  const [service, setService] = useState(transferServices);
 
   return (
     <div className="bg-bgColor">
@@ -193,11 +199,21 @@ const Home = () => {
       </div>
 
       {/* Transfer Service */}
-      <div className="transfer-service">
+      <div className="transfer-service py-5">
         <div className="container mx-auto">
           <h1 className="text-center text-4xl font-medium py-3 mb-5 mt-10">
             Personal Currency Transfers Services
           </h1>
+
+          <div className="flex flex-col md:flex-row gap-10">
+            {service.map((data) => {
+              const { id, title, img, message } = data;
+
+              return (
+                <Service key={id} title={title} img={img} message={message} />
+              );
+            })}
+          </div>
         </div>
       </div>
     </div>
