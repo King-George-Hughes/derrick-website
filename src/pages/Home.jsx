@@ -200,12 +200,12 @@ const Home = () => {
 
       {/* Transfer Service */}
       <div className="transfer-service py-5">
-        <div className="container mx-auto">
+        <div className="container mx-auto p-3">
           <h1 className="text-center text-4xl font-medium py-3 mb-5 mt-10">
             Personal Currency Transfers Services
           </h1>
 
-          <div className="flex flex-col md:flex-row gap-10">
+          <div className="flex flex-col md:flex-row gap-5 md:gap-8">
             {service.map((data) => {
               const { id, title, img, message } = data;
 
