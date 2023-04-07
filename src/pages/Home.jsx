@@ -205,7 +205,7 @@ const Home = () => {
             Personal Currency Transfers Services
           </h1>
 
-          <div className="flex flex-col md:flex-row gap-5 md:gap-8">
+          <div className="flex flex-col md:items-center md:justify-center md:flex-row gap-5 md:gap-5">
             {service.map((data) => {
               const { id, title, img, message } = data;
 
