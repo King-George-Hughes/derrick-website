@@ -240,7 +240,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="bg-white p-5 flex flex-col items-center justify-between gap-10 md:p-10 md:flex-row">
+          <div className="bg-white p-5 flex flex-col items-center justify-between gap-10 mb-10 md:p-10 md:flex-row rounded-b-xl">
             <img
               src="./card.jpg"
               alt=""
