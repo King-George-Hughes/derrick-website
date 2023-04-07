@@ -182,7 +182,7 @@ const Home = () => {
       </div>
 
       {/* Why Choose */}
-      <div className="why-choose relative w-full h-full bg-hero-bg bg-no-repeat bg-cover bg-center bg-fixed flex md:h-screen">
+      <div className="why-choose relative w-full h-full bg-hero-bg2 bg-no-repeat bg-cover bg-center bg-fixed flex md:h-screen">
         <div className="container bg-bgColor w-full mt-auto mx-auto flex flex-col items-center justify-center p-5 md:w-1/2 md:ml-auto md:mt-0 md:mx-0">
           <h1 className="text-center text-4xl font-medium py-3 mb-5">
             Why Choose Us
@@ -213,6 +213,30 @@ const Home = () => {
                 <Service key={id} title={title} img={img} message={message} />
               );
             })}
+          </div>
+        </div>
+      </div>
+
+      {/* Key Features */}
+      <div className="key-features bg-bgCardColor mt-20 py-10">
+        <div className="container mx-auto">
+          <h1 className="text-center text-4xl font-medium py-3 mb-5 mt-10">
+            Money Transfer Company Key Features
+          </h1>
+
+          <div className="flex flex-col md:flex-row">
+            <div className="bg-gradient-to-r from-primaryColor to-secondaryColor text-center p-8 w-full md:w-1/4">
+              <span className="text-white text-xl">Security</span>
+            </div>
+            <div className="transition duration-500 ease-in bg-gradient-to-r from-primaryColor2 to-secondaryColo2 text-center p-8 w-full hover:from-primaryColor hover:to-secondaryColor md:w-1/4">
+              <span className="text-white text-xl">Cost</span>
+            </div>
+            <div className="transition duration-500 ease-in bg-gradient-to-r from-primaryColor2 to-secondaryColo2 text-center p-8 w-full hover:from-primaryColor hover:to-secondaryColor md:w-1/4">
+              <span className="text-white text-xl">Speed</span>
+            </div>
+            <div className="transition duration-500 ease-in bg-gradient-to-r from-primaryColor2 to-secondaryColo2 text-center p-8 w-full hover:from-primaryColor hover:to-secondaryColor md:w-1/4">
+              <span className="text-white text-xl">Accessibility</span>
+            </div>
           </div>
         </div>
       </div>

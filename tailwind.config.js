@@ -15,6 +15,7 @@ module.exports = {
     extend: {
       colors: {
         bgColor: "#F4F7F9",
+        bgCardColor: "#E5F6F0",
         primaryColor: "#EF0B78",
         secondaryColor: "#FE6901",
         primaryColor2: "#26C0B5",
@@ -25,6 +26,7 @@ module.exports = {
 
       backgroundImage: {
         "hero-bg": "url('../src/assets/bg.jpg')",
+        "hero-bg2": "url('../src/assets/bg2.jpg')",
       },
     },
   },
