@@ -12,7 +12,7 @@ const NavBar = () => {
 
   return (
     <nav className="py-6 bg-gradient-to-r from-gradient1 to-gradient2 fixed z-20 backdrop-blur-md w-full text-white">
-      <div className="container mx-auto flex items-center justify-between px-2">
+      <div className="container mx-auto flex items-center justify-between px-5">
         <a
           href="#"
           className="logo font-bold font-pacifico text-2xl md:text-4xl"

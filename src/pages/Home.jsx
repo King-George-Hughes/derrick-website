@@ -140,7 +140,7 @@ const Home = () => {
             Popular Countries Our Customers Send Money
           </h1>
 
-          <div className="flex flex-col md:flex-row md:flex-wrap md:items-center md:justify-center">
+          <div className="flex flex-col md:flex-row md:space-x-4 md:flex-wrap md:items-center md:justify-center">
             {countries.map((country) => {
               const { id, img, name } = country;
 
@@ -178,7 +178,7 @@ const Home = () => {
       {/* Why Choose */}
       <div className="why-choose relative w-full bg-hero-bg bg-no-repeat bg-cover bg-center bg-fixed flex h-screen">
         <div className="container bg-bgColor w-full mt-auto mx-auto flex flex-col items-center justify-center p-5 md:w-1/2 md:ml-auto md:mt-0 md:mx-0">
-          <h1 className="text-center text-4xl font-medium py-5 mb-5">
+          <h1 className="text-center text-4xl font-medium py-3 mb-5">
             Why Choose Us
           </h1>
 
@@ -189,6 +189,15 @@ const Home = () => {
               return <Why key={id} title={title} message={message} />;
             })}
           </div>
+        </div>
+      </div>
+
+      {/* Transfer Service */}
+      <div className="transfer-service">
+        <div className="container mx-auto">
+          <h1 className="text-center text-4xl font-medium py-3 mb-5 mt-10">
+            Personal Currency Transfers Services
+          </h1>
         </div>
       </div>
     </div>
