@@ -219,13 +219,13 @@ const Home = () => {
       </div>
 
       {/* Key Features */}
-      <div className="key-features bg-bgCardColor mt-20 py-10">
+      <div className="key-features bg-bgCardColor mt-10 md:mt-20 py-5 md:py-10">
         <div className="container mx-auto">
           <h1 className="text-center text-4xl font-medium py-3 mb-5 mt-10">
             Money Transfer Company Key Features
           </h1>
 
-          <div className="flex flex-col md:flex-row">
+          <div className="flex flex-col px-3 md:px-0 md:flex-row">
             <div className="bg-gradient-to-r from-primaryColor to-secondaryColor text-center p-8 w-full md:w-1/4">
               <span className="text-white text-xl">Security</span>
             </div>
@@ -240,7 +240,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="bg-white p-5 flex flex-col items-center justify-between gap-10 mb-10 md:p-10 md:flex-row rounded-b-xl">
+          <div className="bg-white p-5 mx-3 flex flex-col items-center justify-between gap-10 mb-10 md:p-10 md:mx-0 md:flex-row rounded-b-xl">
             <img
               src="./card.jpg"
               alt=""
