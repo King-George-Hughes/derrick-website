@@ -27,6 +27,7 @@ module.exports = {
       backgroundImage: {
         "hero-bg": "url('../src/assets/bg.jpg')",
         "hero-bg2": "url('../src/assets/bg2.jpg')",
+        "hero-bg3": "url('../src/assets/bg3.jpg')",
       },
     },
   },

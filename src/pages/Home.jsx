@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavBar, Country, How, Why, Service, HardWork } from "../components";
-import { bg } from "../assets";
+import { bg, bg2 } from "../assets";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
@@ -27,7 +27,7 @@ const Home = () => {
       {/* Hero */}
       <div className="relative w-full h-full flex md:h-screen pb-10">
         <img
-          src={bg}
+          src={bg2}
           alt=""
           className="absolute h-full left-0 top-0 bottom-0 w-full object-cover bg-cover z-0"
         />
