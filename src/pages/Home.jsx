@@ -1,15 +1,26 @@
 import React, { useState } from "react";
-import { NavBar, Country, How, Why, Service, HardWork } from "../components";
-import { bg, bg2 } from "../assets";
+import { bg } from "../assets";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
+import { faCircleCheck, faPager } from "@fortawesome/free-solid-svg-icons";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import { faAppleAlt } from "@fortawesome/free-solid-svg-icons";
+import { faPlay } from "@fortawesome/free-solid-svg-icons";
+import {
+  NavBar,
+  Country,
+  How,
+  Why,
+  Service,
+  HardWork,
+  ProtectMoney,
+} from "../components";
 import {
   allCountries,
   howItWorks,
   whyChoose,
   transferServices,
   hardWorks,
+  protectingMoney,
 } from "../data/data";
 
 const Home = () => {
@@ -18,6 +29,7 @@ const Home = () => {
   const [whyYou, setWhyYou] = useState(whyChoose);
   const [service, setService] = useState(transferServices);
   const [hardWork, setHardWork] = useState(hardWorks);
+  const [protectMoney, setProtectMoney] = useState(protectingMoney);
 
   return (
     <div className="bg-bgColor">
@@ -328,11 +340,67 @@ const Home = () => {
       </div>
 
       {/* Protecting your money */}
-      <div className="protecting pt-10 md:pt-24">
-        <div className="container">
+      <div className="protecting pt-10 md:pt-24 md:pb-10">
+        <div className="container mx-auto">
           <h1 className="text-center text-4xl font-medium py-3 mb-8">
             Protecting Your Money
           </h1>
+
+          <div className="flex flex-col gap-6 items-center justify-center md:flex-row">
+            {protectMoney.map((data) => {
+              const { id, title, message } = data;
+
+              return (
+                <ProtectMoney
+                  key={id}
+                  id={id}
+                  title={title}
+                  message={message}
+                />
+              );
+            })}
+          </div>
+        </div>
+      </div>
+
+      {/* Download App */}
+      <div className="download-app py-16 md:my-28">
+        <div className="container mx-auto flex flex-col items-center gap-10 md:flex-row md:gap-0">
+          <div className="w-full md:w-1/2">
+            <p className="text-primaryColor text-lg font-medium">
+              Download App
+            </p>
+            <h2 className="font-bold text-4xl my-4 md:max-w-lg">
+              Popular Countries Our Customers Send Money
+            </h2>
+            <p className="text-gray-600 text-lg md:max-w-lg">
+              Instant free download from store cloud based storage for your data
+              backup just log in with your mail account from play store and
+              using whatever you want for your business purpose.
+            </p>
+            <div className="flex items-center justify-center my-5 gap-5 md:justify-start">
+              <button className="bg-gradient-to-r from-primaryColor to-secondaryColor rounded-full px-8 py-3 text-white flex items-center gap-3 justify-between hover:from-primaryColor2 hover:to-secondaryColo2">
+                <FontAwesomeIcon size="xl" icon={faAppleAlt} />
+                <div>
+                  <h3 className="text-sm font-light">Download on</h3>
+                  <h3 className="font-medium">App Store</h3>
+                </div>
+              </button>
+              <button className="bg-gradient-to-r from-primaryColor2 to-secondaryColo2 rounded-full px-8 py-3 text-white flex items-center gap-3 justify-between hover:from-primaryColor hover:to-secondaryColor">
+                <FontAwesomeIcon size="xl" icon={faPlay} />
+                <div>
+                  <h3 className="text-sm font-light">Download on</h3>
+                  <h3 className="font-medium">App Store</h3>
+                </div>
+              </button>
+            </div>
+            <h3 className="font-medium text-xl mt-5">
+              Over 10 million downloads worldwide
+            </h3>
+          </div>
+          <div className="w-full md:w-1/2">
+            <img src="../app.png" alt="" />
+          </div>
         </div>
       </div>
     </div>

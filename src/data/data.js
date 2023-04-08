@@ -167,4 +167,31 @@ export const hardWorks = [
   },
 ];
 
+export const protectingMoney = [
+  {
+    id: 1,
+    title: "Safeguarded with leading banks",
+    message:
+      "Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. vivamus suscipit tortor eget felis porttitor volutpat. Sed porttitor lectus nibh.",
+  },
+  {
+    id: 2,
+    title: "Extra-secure transactions",
+    message:
+      "Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. vivamus suscipit tortor eget felis porttitor volutpat. Sed porttitor lectus nibh.",
+  },
+  {
+    id: 3,
+    title: "Audited regularly",
+    message:
+      "Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. vivamus suscipit tortor eget felis porttitor volutpat. Sed porttitor lectus nibh.",
+  },
+  {
+    id: 4,
+    title: "Data protection",
+    message:
+      "Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. vivamus suscipit tortor eget felis porttitor volutpat. Sed porttitor lectus nibh.",
+  },
+];
+
 // export default countries;
