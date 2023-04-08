@@ -143,4 +143,28 @@ export const transferServices = [
   },
 ];
 
+export const hardWorks = [
+  {
+    id: 1,
+    img: "../save-time.svg",
+    title: "Save time",
+    message:
+      "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. donec rutrum congue leo eget malesuada.",
+  },
+  {
+    id: 2,
+    img: "../money-saving.svg",
+    title: "Save money",
+    message:
+      "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. donec rutrum congue leo eget malesuada.",
+  },
+  {
+    id: 3,
+    img: "../money-saving.svg",
+    title: "Save securely",
+    message:
+      "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. donec rutrum congue leo eget malesuada.",
+  },
+];
+
 // export default countries;

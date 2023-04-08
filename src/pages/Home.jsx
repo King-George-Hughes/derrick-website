@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavBar, Country, How, Why, Service } from "../components";
+import { NavBar, Country, How, Why, Service, HardWork } from "../components";
 import { bg } from "../assets";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
@@ -9,6 +9,7 @@ import {
   howItWorks,
   whyChoose,
   transferServices,
+  hardWorks,
 } from "../data/data";
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
   const [howTo, setHowTo] = useState(howItWorks);
   const [whyYou, setWhyYou] = useState(whyChoose);
   const [service, setService] = useState(transferServices);
+  const [hardWork, setHardWork] = useState(hardWorks);
 
   return (
     <div className="bg-bgColor">
@@ -240,11 +242,11 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="bg-white p-5 mx-3 flex flex-col items-center justify-between gap-10 mb-10 md:p-10 md:mx-0 md:flex-row rounded-b-xl">
+          <div className="bg-white p-5 mx-3 flex flex-col items-center justify-between gap-5 md:gap-10 mb-10 md:p-10 md:mx-0 md:flex-row rounded-b-xl">
             <img
               src="./card.jpg"
               alt=""
-              className="w-full max-h-[500px] object-cover md:w-1/3 rounded-xl"
+              className="w-full max-h-[400px] object-cover md:w-1/3 md:max-h-[550px] rounded-xl"
             />
             <div className="md:w-2/3">
               <p className="text-lg text-gray-600 my-5 max-w-3xl">
@@ -303,6 +305,34 @@ const Home = () => {
               </p>
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* Hard Working People */}
+      <div className="why-choose relative w-full h-full bg-hero-bg2 bg-no-repeat bg-cover bg-center bg-fixed flex md:h-screen mt-20">
+        <div className="container bg-bgColor w-full mt-auto mx-auto flex flex-col items-center justify-center p-5 md:w-1/2 md:mr-auto md:mt-0 md:mx-0">
+          <h1 className="text-center text-4xl font-medium py-3 mb-8">
+            Being A Money Transfer Service For Hard Working People
+          </h1>
+
+          <div className="flex flex-col gap-5 md:gap-16">
+            {hardWork.map((data) => {
+              const { id, img, title, message } = data;
+
+              return (
+                <HardWork key={id} img={img} title={title} message={message} />
+              );
+            })}
+          </div>
+        </div>
+      </div>
+
+      {/* Protecting your money */}
+      <div className="protecting pt-10 md:pt-24">
+        <div className="container">
+          <h1 className="text-center text-4xl font-medium py-3 mb-8">
+            Protecting Your Money
+          </h1>
         </div>
       </div>
     </div>
