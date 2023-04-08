@@ -27,7 +27,7 @@ const Home = () => {
       {/* Hero */}
       <div className="relative w-full h-full flex md:h-screen pb-10">
         <img
-          src={bg2}
+          src={bg}
           alt=""
           className="absolute h-full left-0 top-0 bottom-0 w-full object-cover bg-cover z-0"
         />
@@ -309,7 +309,7 @@ const Home = () => {
       </div>
 
       {/* Hard Working People */}
-      <div className="why-choose relative w-full h-full bg-hero-bg2 bg-no-repeat bg-cover bg-center bg-fixed flex md:h-screen mt-20">
+      <div className="why-choose relative w-full h-full bg-hero-bg3 bg-no-repeat bg-cover bg-center bg-fixed flex md:h-screen mt-20">
         <div className="container bg-bgColor w-full mt-auto mx-auto flex flex-col items-center justify-center p-5 md:w-1/2 md:mr-auto md:mt-0 md:mx-0">
           <h1 className="text-center text-4xl font-medium py-3 mb-8">
             Being A Money Transfer Service For Hard Working People
