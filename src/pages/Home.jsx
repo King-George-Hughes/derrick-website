@@ -340,8 +340,8 @@ const Home = () => {
       </div>
 
       {/* Protecting your money */}
-      <div className="protecting pt-10 md:pt-24 md:pb-10">
-        <div className="container mx-auto">
+      <div className="protecting pt-10 md:pt-5 md:pb-10">
+        <div className="container mx-auto px-3">
           <h1 className="text-center text-4xl font-medium py-3 mb-8">
             Protecting Your Money
           </h1>
@@ -365,7 +365,7 @@ const Home = () => {
 
       {/* Download App */}
       <div className="download-app py-16 md:my-28">
-        <div className="container mx-auto flex flex-col items-center gap-10 md:flex-row md:gap-0">
+        <div className="container mx-auto flex flex-col items-center gap-10 px-3 md:flex-row md:gap-0">
           <div className="w-full md:w-1/2">
             <p className="text-primaryColor text-lg font-medium">
               Download App
@@ -378,15 +378,15 @@ const Home = () => {
               backup just log in with your mail account from play store and
               using whatever you want for your business purpose.
             </p>
-            <div className="flex items-center justify-center my-5 gap-5 md:justify-start">
-              <button className="bg-gradient-to-r from-primaryColor to-secondaryColor rounded-full px-8 py-3 text-white flex items-center gap-3 justify-between hover:from-primaryColor2 hover:to-secondaryColo2">
+            <div className="flex items-center justify-start my-5 gap-5">
+              <button className="transition duration-500 bg-gradient-to-r from-primaryColor to-secondaryColor rounded-full px-8 py-3 text-white flex items-center gap-3 justify-between hover:from-primaryColor2 hover:to-secondaryColo2">
                 <FontAwesomeIcon size="xl" icon={faAppleAlt} />
                 <div>
                   <h3 className="text-sm font-light">Download on</h3>
                   <h3 className="font-medium">App Store</h3>
                 </div>
               </button>
-              <button className="bg-gradient-to-r from-primaryColor2 to-secondaryColo2 rounded-full px-8 py-3 text-white flex items-center gap-3 justify-between hover:from-primaryColor hover:to-secondaryColor">
+              <button className="transition duration-500 bg-gradient-to-r from-primaryColor2 to-secondaryColo2 rounded-full px-8 py-3 text-white flex items-center gap-3 justify-between hover:from-primaryColor hover:to-secondaryColor">
                 <FontAwesomeIcon size="xl" icon={faPlay} />
                 <div>
                   <h3 className="text-sm font-light">Download on</h3>
