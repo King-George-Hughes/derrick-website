@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faLocation,
+  faLocationPin,
   faMailBulk,
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
@@ -73,9 +73,17 @@ const Footer = () => {
             <hr className="w-[50px] h-[2px] border-none bg-primaryColor mb-3" />
             <ul className="space-y-2 text-md font-light">
               <li className="md:max-w-md">
+                <FontAwesomeIcon
+                  icon={faLocationPin}
+                  className="mr-3 text-primaryColor"
+                />
                 Location: 27 Division St, New York, NY 10002, USA
               </li>
               <li>
+                <FontAwesomeIcon
+                  icon={faMailBulk}
+                  className="mr-3 text-primaryColor"
+                />
                 Email:
                 <a href="#" className="hover:text-primaryColor">
                   {" "}
@@ -83,6 +91,10 @@ const Footer = () => {
                 </a>
               </li>
               <li>
+                <FontAwesomeIcon
+                  icon={faPhone}
+                  className="mr-3 text-primaryColor"
+                />
                 Phone:
                 <a href="#" className="hover:text-primaryColor">
                   {" "}
