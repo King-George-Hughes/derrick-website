@@ -341,7 +341,7 @@ const Home = () => {
 
       {/* Protecting your money */}
       <div className="protecting pt-10 md:pt-24 md:pb-10">
-        <div className="container mx-auto">
+        <div className="container mx-auto p-3">
           <h1 className="text-center text-4xl font-medium py-3 mb-8">
             Protecting Your Money
           </h1>
@@ -365,7 +365,7 @@ const Home = () => {
 
       {/* Download App */}
       <div className="download-app py-16 md:my-10">
-        <div className="container mx-auto flex flex-col items-center gap-10 md:flex-row md:gap-0">
+        <div className="container mx-auto flex flex-col items-center p-3 gap-10 md:flex-row md:gap-0">
           <div className="w-full md:w-1/2">
             <p className="text-primaryColor text-lg font-medium">
               Download App
