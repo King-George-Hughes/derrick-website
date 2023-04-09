@@ -7,7 +7,7 @@ const ProtectMoney = ({ id, title, message }) => {
         <div className="bg-bgCardColor p-8 text-primaryColor font-bold text-3xl -rotate-90">
           0{id}
         </div>
-        <div className="p-10">
+        <div className="p-5 md:p-10">
           <h3 className="text-xl font-medium">{title}</h3>
           <p className="text-gray-600 mt-4">{message}</p>
         </div>

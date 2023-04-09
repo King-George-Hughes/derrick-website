@@ -13,6 +13,7 @@ import {
   Service,
   HardWork,
   ProtectMoney,
+  Footer,
 } from "../components";
 import {
   allCountries,
@@ -403,6 +404,9 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };
