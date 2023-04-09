@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { bg } from "../assets";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleCheck, faPager } from "@fortawesome/free-solid-svg-icons";
-import { faCheck } from "@fortawesome/free-solid-svg-icons";
-import { faAppleAlt } from "@fortawesome/free-solid-svg-icons";
-import { faPlay } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCircleCheck,
+  faAppleAlt,
+  faPlay,
+  faCheck,
+} from "@fortawesome/free-solid-svg-icons";
 import {
   NavBar,
   Country,
