@@ -20,8 +20,9 @@ const Footer = () => {
           </div>
 
           <div className="py-6 md:w-1/4">
-            <h2>Company</h2>
-            <ul>
+            <h2 className="text-xl font-medium pb-2">Company</h2>
+            <hr className="w-[50px] h-[2px] border-none bg-primaryColor mb-3" />
+            <ul className="space-y-2 text-md font-light">
               <li>
                 <a href="#">About Us</a>
               </li>
@@ -38,8 +39,9 @@ const Footer = () => {
           </div>
 
           <div className="py-6 md:w-1/4">
-            <h2>Supprot</h2>
-            <ul>
+            <h2 className="text-xl font-medium pb-2">Supprot</h2>
+            <hr className="w-[50px] h-[2px] border-none bg-primaryColor mb-3" />
+            <ul className="space-y-2 text-md font-light">
               <li>
                 <a href="#">FAQ's</a>
               </li>
@@ -53,8 +55,9 @@ const Footer = () => {
           </div>
 
           <div className="py-6 md:w-1/4">
-            <h2>Address</h2>
-            <ul>
+            <h2 className="text-xl font-medium pb-2">Address</h2>
+            <hr className="w-[50px] h-[2px] border-none bg-primaryColor mb-3" />
+            <ul className="space-y-2 text-md font-light">
               <li>Location: 27 Division St, New York, NY 10002, USA</li>
               <li>
                 Email:
