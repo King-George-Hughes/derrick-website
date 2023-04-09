@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="w-full flex flex-col items-start md:pt-5 md:pb-20 md:flex-row">
           <div className="py-6 px-2 w-full md:w-1/4">
             <h1 className="text-3xl font-bold mb-5">LOGO</h1>
-            <p className="font-light md:max-w-md">
+            <p className="font-light md:max-w-md leading-8">
               Quis ipsum suspendisse ultrices gravida commodo. Risus commodo
               veliliee vel viverra maecenas accumsan lacus vel facilisis
             </p>
@@ -24,16 +24,24 @@ const Footer = () => {
             <hr className="w-[50px] h-[2px] border-none bg-primaryColor mb-3" />
             <ul className="space-y-2 text-md font-light">
               <li>
-                <a href="#">About Us</a>
+                <a href="#" className="hover:text-primaryColor">
+                  About Us
+                </a>
               </li>
               <li>
-                <a href="#">Features</a>
+                <a href="#" className="hover:text-primaryColor">
+                  Features
+                </a>
               </li>
               <li>
-                <a href="#">Our Pricing</a>
+                <a href="#" className="hover:text-primaryColor">
+                  Our Pricing
+                </a>
               </li>
               <li>
-                <a href="#">Latest News</a>
+                <a href="#" className="hover:text-primaryColor">
+                  Latest News
+                </a>
               </li>
             </ul>
           </div>
@@ -43,13 +51,19 @@ const Footer = () => {
             <hr className="w-[50px] h-[2px] border-none bg-primaryColor mb-3" />
             <ul className="space-y-2 text-md font-light">
               <li>
-                <a href="#">FAQ's</a>
+                <a href="#" className="hover:text-primaryColor">
+                  FAQ's
+                </a>
               </li>
               <li>
-                <a href="#">Terms & Conditions</a>
+                <a href="#" className="hover:text-primaryColor">
+                  Terms & Conditions
+                </a>
               </li>
               <li>
-                <a href="#">Contact Us</a>
+                <a href="#" className="hover:text-primaryColor">
+                  Contact Us
+                </a>
               </li>
             </ul>
           </div>
@@ -63,11 +77,17 @@ const Footer = () => {
               </li>
               <li>
                 Email:
-                <a href="#"> logo@gmail.com</a>
+                <a href="#" className="hover:text-primaryColor">
+                  {" "}
+                  logo@gmail.com
+                </a>
               </li>
               <li>
                 Phone:
-                <a href="#"> +233 573 849 441</a>
+                <a href="#" className="hover:text-primaryColor">
+                  {" "}
+                  +233 573 849 441
+                </a>
               </li>
             </ul>
           </div>
